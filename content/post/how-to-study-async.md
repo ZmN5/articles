@@ -5,13 +5,13 @@ lastmod: 2018-12-29T20:52:03+08:00
 draft: false 
 keywords: []
 description: ""
-tags: []
-categories: []
+tags: ["async", "yield from"]
+categories: ["async"]
 author: ""
 
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
-comment: false
+comment: true
 toc: false
 autoCollapseToc: false
 postMetaInFooter: false
