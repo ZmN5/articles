@@ -44,7 +44,7 @@ sequenceDiagrams:
 
 model:
 
-``` 
+```python
 旧列名：
 cos_path = models.CharField(max_length=200, null=True, verbose_name='存储路径')
 
@@ -54,7 +54,7 @@ storage_path = models.CharField(max_length=200, null=True,verbose_name='存储�
 
 migrations:
 
-```
+```python
 operations = [
     migrations.RemoveField(
         model_name='insurancedocument',
@@ -69,7 +69,7 @@ operations = [
 
 sql:
 
-```
+```sql
 BEGIN;
 --
 -- Remove field cos_path from insurancedocument
@@ -91,14 +91,14 @@ COMMIT;
 操作如下，利用db_column来改变字段名的，然后：
 
 
-```
+```python
 cos_path = models.CharField(max_length=200, null=True, verbose_name='存储路径')
 
 storage_path = models.CharField(max_length=200, null=True, db_column='cos_path', verbose_name='存储路径')
 ```
 
 
-```
+```sql
 
 BEGIN;
 --
@@ -120,7 +120,7 @@ django orm会先把cos_path那个字段给drop掉，数据还会丢失。
 
 (1) 利用python manage.py makemigrations --empty apis创建一个新的migrations文件, 编辑：
 
-```
+```python
 from django.db import migrations
 from django.db import models
 
@@ -150,7 +150,7 @@ class Migration(migrations.Migration):
 
 (2)执行的sql语句：
 
-```
+```sql
 BEGIN;
 --
 -- Alter field cos_path on insurancedocument
