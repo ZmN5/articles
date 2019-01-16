@@ -1,7 +1,7 @@
 ---
 title: "一种有意思的死锁"
-date: 2019-01-16T22:43:13+08:00
-lastmod: 2019-01-16T22:43:13+08:00
+date: 2019-01-17T01:03:13+08:00
+lastmod: 2019-01-17T01:03:13+08:00
 draft: false
 keywords: []
 description: ""
@@ -104,9 +104,16 @@ sequenceDiagrams:
 
 > This is usually the time when I suggest to separate the server into two parts: "normal blocking with ORM" and "asynchronous without ORM".
 
-不过倒是想起另外一个问题了, 现在公司业务都是用的`gunicorn`+`gevent`, 这个内部是怎么解决这个问题的呢，想不明白诶。。。
+不过倒是想起另外一个问题了, 现在公司业务都是用的`gunicorn`+`gevent`, 这个内部是怎么解决这个问题的呢
 
-不过联想到`gevent`的协程是抢占式的，会不会是因为破坏了`不可抢占条件`而避免了死锁呢，给自己留个问题吧。
+可以猜测一下：
+
+上面的例子造成死锁是因为有协程调用同步操作, 而gevent是通过`monkey_path`的操作从底层改变所有请求的行为，就没有这个问题了。
+
+不过还有其他问题。
+
+`monkey_patch`针对Python代码有效，如果数据库连接器用的是c扩展，emmm...可以大胆的猜测一下可能的bug
+
 
 参考资料：
 
