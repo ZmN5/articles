@@ -44,7 +44,7 @@ sequenceDiagrams:
 
 ## 描述符协议是什么？
 
-如果一个类实现了`__set__`, `__get__`, `__delete__`，这三个中任意一个或者多个方法，那么就实现了描述符协议，它的实例这就是一个描述符，同时要明白这也是一个类方法。具体描述符协议如下：
+如果一个类实现了`__set__`, `__get__`, `__delete__`，这三个中任意一个或者多个方法，那么就实现了描述符协议，它的实例这就是一个描述符，同时要明白这也是一个类属性。具体描述符协议如下：
 
 ```python
 descr.__get__(self, obj, type=None) --> value
@@ -54,7 +54,7 @@ descr.__set__(self, obj, value) --> None
 descr.__delete__(self, obj) --> None
 ```
 
-在Python中，对象属性的默认查找顺序，距离来说是这样的，比如`a.x`
+在Python中，对象属性的默认查找顺序，举例来说是这样的，比如`a.x`
 
 1. 先查找`a.__dict__['x']`
 2. 如果没有查到的话, `type(a).__dict__['x']`沿着`方法解析顺序`(MRO) 继续向上查找，除了元类
@@ -166,8 +166,6 @@ class DataDescriptor:
 
 class Test:
     a = DataDescriptor()
-
-
 
     def __getattribute__(self, attr):
         """
