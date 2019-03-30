@@ -65,11 +65,11 @@ sequenceDiagrams:
 
 #### 3.1 本地`sock5`代理
 
-1. 安装
+* 安装
 
 > pip install shadowsocks
 
-2. 编辑
+* 编辑
 
 > vim /etc/shadowsocks.json
 
@@ -86,7 +86,7 @@ sequenceDiagrams:
 }
 ```
 
-3. 启动：
+* 启动：
 
 > `sslocal -c /etc/shadowsocks.json start`
 
@@ -94,11 +94,11 @@ sequenceDiagrams:
 
 sock5代理是不能直接给终端用的，需要转换为`http`代理，这里用`prioxy`
 
-1. 安装
+* 安装
 
 > brew install privoxy
 
-2. 编辑 
+* 编辑 
 
 > vim /usr/local/etc/privoxy/config
 
@@ -107,19 +107,19 @@ sock5代理是不能直接给终端用的，需要转换为`http`代理，这里
 > listen-address  0.0.0.0:8118  # 要代理给局域网内其他终端使用，所以要绑定0.0.0.0
 > forward-socks5 / 127.0.0.1:1080 .
 
-3. 启动
+* 启动
 
 > /usr/local/Cellar/privoxy/3.0.26/sbin/privoxy /usr/local/etc/privoxy/config
 
-3.3 vagrant设置
+#### 3.3 vagrant设置
 
 为了比较方便的设置虚拟机里面的代理，用了vagrant插件
 
-安装
+* 安装
 
 > vagrant plugin install vagrant-proxyconf
 
-#### 3.3 vagrant配置文件
+#### 3.4 vagrant配置文件
 
 * 编辑`Vagrantfile`
 
@@ -168,7 +168,7 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-#### 小结
+#### 3.5 小结
 
 第一次主要尝试就是这些了，结果是失败，因为一个未知名的错误，Google提示man in middle之类的，当时是凌晨四点，就放弃去睡了。
 
@@ -199,3 +199,5 @@ done
 第二次尝试主要就是这个了。
 
 结果集群成功拉起来了，但是`calico-node`和`calico-controller`pod `ERROR`折腾了好久没有头绪，好像是calico访问etcd时候出错，（再次严重怀疑智商）, 先记录下来，我要睡觉。
+
+代码: https://github.com/fucangyu/my-k8s-cluster
