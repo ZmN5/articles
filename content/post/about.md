@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About Me"
 date: 2018-11-10T20:59:00+08:00
 lastmod: 2018-11-10T20:59:00+08:00
 keywords: []
@@ -39,11 +39,11 @@ sequenceDiagrams:
 
 ---
 
-* 现在北京
+* 在北京
 * 工作中主要使用Python
 * 脚本工程师，十八线程序员 
-* 在学racket，越来越喜欢这门语言
-* 正在continuation和macro的坑里面
+* 在学~~racket~~scala，越来越喜欢这门语言
+* ~~正在continuation和macro的坑里面~~
 * 对k8s和docker极有兴趣
 * 越来越胖了
 <!--more-->
