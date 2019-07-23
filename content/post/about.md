@@ -42,8 +42,10 @@ sequenceDiagrams:
 * 在北京
 * 工作中主要使用Python
 * 脚本工程师，十八线程序员 
+* 在函数式编程的坑里面
 * 在学~~racket~~scala，越来越喜欢这门语言
 * ~~正在continuation和macro的坑里面~~
 * 对k8s和docker极有兴趣
-* 越来越胖了
+* 减肥中
+* 现在~~爱因互动~~美团工作
 <!--more-->
