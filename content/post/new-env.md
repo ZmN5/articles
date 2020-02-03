@@ -53,14 +53,14 @@ sequenceDiagrams:
 
    1. 安装： brew install tmux
    2. 安装tpm：https://github.com/tmux-plugins/tpm
-   3. 配置参考：https://github.com/fucangyu/my-config/blob/master/dot.tmux.conf
+   3. 配置参考：https://github.com/zmn5/my-config/blob/master/dot.tmux.conf
 
 4. Vim8
 
    1. brew reinstall vim --with-python3 --with-luajit
    2. 安装插件管理工具Plug: https://github.com/junegunn/vim-plug
    3. 安装`universal-tags`:  https://github.com/universal-ctags/ctags
-   4. 安装插件： https://github.com/fucangyu/my-config/blob/master/dot.vimrc
+   4. 安装插件： https://github.com/zmn5/my-config/blob/master/dot.vimrc
 
 5. zsh/oh-my-zsh
 
