@@ -40,7 +40,7 @@ sequenceDiagrams:
 
 ---
 
-先回顾一下上一篇文章[怎么理解异步(1)](https://fucangyu.github.io/post/how-to-study-async/)
+先回顾一下上一篇文章[怎么理解异步(1)](https://zmn5.github.io/post/how-to-study-async/)
 
 对异步编程来说，需要代码段在把控制权移交给loop时候，保存当前`continuation`, 以便于事件发生的时候，当前代码段可以继续执行，换句话说，也就是：
 

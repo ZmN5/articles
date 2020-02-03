@@ -200,4 +200,4 @@ done
 
 结果集群成功拉起来了，但是`calico-node`和`calico-controller`pod `ERROR`折腾了好久没有头绪，好像是calico访问etcd时候出错，（再次严重怀疑智商）, 先记录下来，我要睡觉。
 
-代码: https://github.com/fucangyu/my-k8s-cluster
+代码: https://github.com/zmn5/my-k8s-cluster

@@ -1,4 +1,4 @@
-baseURL = "https://fucangyu.github.io/"
+baseURL = "https://ZmN5.github.io/"
 languageCode = "en"
 defaultContentLanguage = "zh-cn"                             # en / zh-cn / ... (This field determines which i18n file to use)
 title = "何时"
@@ -158,7 +158,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   [params.social]                                         # 社交链接
     a-email = "cangyufu@gmail.com"
     # b-stack-overflow = "http://localhost:1313"
-    g-github = "https://github.com/fucangyu"
+    g-github = "https://github.com/zmn5"
     # i-zhihu = "http://localhost:1313"
     # j-douban = "http://localhost:1313"
 
