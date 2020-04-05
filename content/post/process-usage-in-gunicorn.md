@@ -209,7 +209,7 @@ gunicorn基于pre-fork工作模型，也就意味着它有一个核心进程，�
 
 在gunicorn里面，对应的handler为`handle_chld`
 
-```
+```python
     def handle_chld(self, sig, frame):
         "SIGCHLD handling"
         self.reap_workers()
@@ -305,7 +305,7 @@ gunicorn会直接抛`StopIteration`退出
 
 在gunicorn中，这两个信号分别对应增加一个工作进程或者减少一个工作进程。
 
-```
+```python
     # self.num_workers += 1 # ttin
     self.num_workers -= 1 # ttou
     self.manage_workers()
