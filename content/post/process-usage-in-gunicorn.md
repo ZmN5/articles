@@ -249,6 +249,7 @@ gunicorn基于pre-fork工作模型，也就意味着它有一个核心进程，�
                 raise
 ```
 
+- 利用os.waitpid清除已经退出的进程占用的资源，比如进程号
 - 如果子进程退出的原因为不能启动，整个服务down掉
 - 子进程退出时候，主进程会轮询查看是哪个子进程退出了，并从注册列表`self.WORKERS`里面清理掉
 - 如果有子进程退出时候的钩子函数，执行之
@@ -280,7 +281,7 @@ SIGHUP一般表示terminal挂断。在一个terminal启动一个前台或者后�
 > The SIGTERM signal is a generic signal used to cause program termination. Unlike SIGKILL, this signal can be blocked, handled, and ignored. It is the normal way to politely ask a program to terminate.
 > The shell command kill generates SIGTERM by default.
 
-gunicorn会直接抛`StopIteration`退出
+handler会直接抛`StopIteration`，`main loop`里面会进行拦截，然后给所有的子进程发送`SIGTERM`信号
 
 #### `SIGINT`
 
@@ -359,6 +360,7 @@ gunicorn在进程的管理方面毫无疑问是非常聪明且有意思的：
 
 1. 利用子进程改文件ctime时间，主进程不停的轮询达到心跳的目的
 2. 利用各种系统信号，进行IPC
+3. gunicorn对待SIGCHLD信号和其他信号的不同处理也值得仔细思考一下🤔
 
 ### 参考：
 
