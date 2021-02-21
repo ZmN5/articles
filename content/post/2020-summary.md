@@ -46,8 +46,8 @@ sequenceDiagrams:
 
 十一之前跟夏某人回家了，虽然时间很短暂，也算是感情路上的一个里程碑吧。最搞笑的是当晚和她舅干了一瓶洋河的情况下，夜里接到报警起来修bug，醉梦里修bug的经历还是挺特别的，不过同样希望这类体验越少越好。
 
-![WechatIMG170](https://user-images.githubusercontent.com/24250938/107113446-ecf9a200-6899-11eb-910e-29fbc9d45d08.jpeg)
-![WechatIMG22652](https://user-images.githubusercontent.com/24250938/107113447-ed923880-6899-11eb-961a-29122d709741.jpeg)
+![夏某人老家](https://user-images.githubusercontent.com/24250938/107113446-ecf9a200-6899-11eb-910e-29fbc9d45d08.jpeg)
+![夏某人老家](https://user-images.githubusercontent.com/24250938/107113447-ed923880-6899-11eb-961a-29122d709741.jpeg)
 
 其他感触最多的，就是越来越明显的感觉到身体的变化吧，和生活中一个微小的习惯对身体的影响有多大。年初时候某一天，夏某人忽然说，“你头顶的头发呢”
 
@@ -69,10 +69,10 @@ sequenceDiagrams:
 ## 去北京玩了！
 
 第一次划皮划艇，在奥森被某人死拉硬拽上的船，体验很好，没想到在北京市区还能有这样一个好玩的地方。
-![WechatIMG167](https://user-images.githubusercontent.com/24250938/107113439-e9661b00-6899-11eb-836f-57f09befba56.jpeg)
-![WechatIMG169](https://user-images.githubusercontent.com/24250938/107113444-ec610b80-6899-11eb-9608-f76ad7668147.jpeg)
-![WechatIMG168](https://user-images.githubusercontent.com/24250938/107113443-eb2fde80-6899-11eb-8507-821f737255dd.jpeg)
-![WechatIMG166](https://user-images.githubusercontent.com/24250938/107113434-e10de000-6899-11eb-9f70-782fbe7c84ca.jpeg)
+![奥森](https://user-images.githubusercontent.com/24250938/107113439-e9661b00-6899-11eb-836f-57f09befba56.jpeg)
+![奥森](https://user-images.githubusercontent.com/24250938/107113444-ec610b80-6899-11eb-9608-f76ad7668147.jpeg)
+![皮划艇](https://user-images.githubusercontent.com/24250938/107113443-eb2fde80-6899-11eb-8507-821f737255dd.jpeg)
+![夏某人面壁思过](https://user-images.githubusercontent.com/24250938/107113434-e10de000-6899-11eb-9f70-782fbe7c84ca.jpeg)
 
 # 编程
 
